@@ -1,0 +1,115 @@
+/* Meta Information */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botoes-azuis: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-pricipal: 'Inter', sans-serif;
+    --cor-botao-hover: #16e8f7;
+    --cor-active: #69f39e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+body {
+    font-family: var(--fonte-pricipal);
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.back {
+    margin: 2vh;
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.back::before {
+    content: url(./img/back-icon.png);
+    margin-right: 0.5vw;
+}
+
+.back:hover {
+    text-decoration: underline;
+    color: var(--cor-botao-hover);
+}
+
+.container__titulo {
+    text-align: center;
+    margin-top: 7vh;
+    color: var(--branco-principal);
+    font-size: 10vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.imagem-erro {
+    margin-top: 6vh;
+    width: 80%;
+    height: auto;
+}
+
+.container__texto {
+    font-size: 4vh;
+    width: 90%;
+    height: auto;
+}
+
+.rodape {
+    text-align: center;
+    margin-bottom: 2.5vh;
+}
+
+/* Responsividade */
+@media screen and (max-width: 777px) {
+    body {
+        background: linear-gradient(var(--cor-de-fundo), var(--cinza-secundario));
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .container__titulo {
+        margin-top: 5vh;
+    }
+
+    .container__titulo {
+        font-size: 5vh;
+        width: auto;
+        height: auto;
+    }
+
+    .container {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    .imagem-erro {
+        width: 50%;
+        margin-top: 5vh;
+    }
+
+    .container__texto {
+        width: auto;
+        height: auto;
+    }
+
+    .rodape {
+        margin-top: 50vh;
+        margin-bottom: 2.5vh;
+        text-align: center;
+    }
+}
