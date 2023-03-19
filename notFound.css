@@ -25,22 +25,6 @@ body {
     font-weight: 400;
 }
 
-.back {
-    margin: 2vh;
-    text-decoration: none;
-    color: var(--branco-principal);
-}
-
-.back::before {
-    content: url(./img/back-icon.png);
-    margin-right: 0.5vw;
-}
-
-.back:hover {
-    text-decoration: underline;
-    color: var(--cor-botao-hover);
-}
-
 .container__titulo {
     text-align: center;
     margin-top: 7vh;
